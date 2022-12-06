@@ -7,6 +7,7 @@ const supabase = createClient(
   process.env.SUPABASE_KEY
 );
 
+
 const { data, error } = await supabase.from("data").select();
 
 console.log(data);
