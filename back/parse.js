@@ -1,14 +1,9 @@
-import * as dotenv from "dotenv";
-dotenv.config();
-import { createClient } from "@supabase/supabase-js";
+
 import csv from "csv-parser";
 import fs from "fs";
 import { sendData } from "./dbUtils.js";
 
-export const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_KEY
-);
+
 
 const results = [];
 
