@@ -1,4 +1,4 @@
-import { supabase } from "./parse.js";
+import { supabase } from "./supabase.js";
 
 export const sendData = async (results) => {
   for (const data of results) {
